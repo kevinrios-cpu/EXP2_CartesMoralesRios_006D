@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>Galería</title>
+        <title>Registro</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <meta http-equiv="X-UA-Compatible" content="ie-edge">
-
         <link rel="icon" type="image/png" href="img/favicon.png">
-        <link rel="stylesheet" href="Css/Styles02.css">
+        <link rel="stylesheet" href="Css/Estilos02.css">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -21,14 +18,6 @@
 
             
         </script>
-        <style>
-            body {
-                background-image: url('img/portada1.jpg');
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                background-size: cover;
-                }
-        </style>
     </head>
     <body>
         <nav>
@@ -44,61 +33,45 @@
                 <i class="fas fa-bars"></i>
             </label>
         </nav>
-        
+        <br>
+        <br>
+        <form name="Contacto" method="POST" action="#">
+            <h1 class="titulo-form">Registro Usuario</h1>
+            <label for="lname">Nombres usuario: </label>
+            <input type="text" id="nomUser" name="nombre" placeholder="Ingrese nombres" required autofocus><br><br>
 
-        <div class="cont">
-            <div class="item">
-              <img src="img/gal_1.jpg" alt="" class="item-img">
-              <div class="item-text">
-                <h3>Imagen 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur.</p>
-              </div>
-            </div>
-            
-            <div class="item">
-              <img src="img/gal_2.jpeg" alt="" class="item-img">
-              <div class="item-text">
-                <h3>Imagen 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur.</p>
-              </div>
-            </div>
-            
-            <div class="item">
-              <img src="img/gal_3.jpg" alt="" class="item-img">
-              <div class="item-text">
-                <h3>Imagen 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur.</p>
-              </div>
-            </div>
-            
-            <div class="item">
-              <img src="img/gal_4.jpg" alt="" class="item-img">
-              <div class="item-text">
-                <h3>Imagen 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur.</p>
-              </div>
-            </div>
-            
-            
-            <div class="item">
-              <img src="img/gal_5.jpg" alt="" class="item-img">
-              <div class="item-text">
-                <h3>Imagen 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur.</p>
-              </div>
-            </div>
-            
-            <div class="item">
-              <img src="img/gal_6.jpg" alt="" class="item-img">
-              <div class="item-text">
-                <h3>Imagen 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur.</p>
-              </div>
-            </div>
-          </div>
+            <label for="lapellido">Apellidos Usuario: </label>
+            <input type="text" id="apeUser" name="apellido" placeholder="Ingrese apellidos" required><br><br>
+
+            <label for="lmensaje">Seleccione género: </label><br><br>
+            <input type="radio" id="mascu" name="genero" value="masculino">
+            <label for="lmasculino">Masculino</label><br>
+
+            <input type="radio" id="fem" name="genero" value="femenino">
+            <label for="lfeme">Femenino</label><br>
+
+            <input type="radio" id="desco" name="genero" value="desconocido">
+            <label for="ldesco">No deseo ingresar</label><br>
+
+            <input type="radio" id="otros" name="genero" value="otro">
+            <label for="lotro">Otro</label><br><br>
 
 
 
+            <label for="lmail">E-mail Usuario: </label>
+            <input type="text" id="mailUser" name="email" placeholder="Ingrese email" required><br><br>
+
+            <label for="lmail">Ingrese Password: </label>
+            <input type="password" id="passUser" name="pass" placeholder="Ingrese password" required minlength="6" maxlength="8"><br><br>
+
+            <label for="lconfirm">Confirmar Password: </label>
+            <input type="password" id="passConfUser" name="Confirmpass" placeholder="Confirmar password" required minlength="6" maxlength="8"><br><br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar"><br>
+            <br>
+
+        </form>
 
 
 
@@ -132,6 +105,7 @@
             <br>
             <h2 class="titular-final">&copy;ImageBoard Design | ImageBoard 2021 </h2>
         </footer>
-    </body>
-</html>
+</body>
 
+
+</html>
