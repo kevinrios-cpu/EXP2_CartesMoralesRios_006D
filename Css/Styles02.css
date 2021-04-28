@@ -8,6 +8,18 @@
     box-sizing: border-box;
     list-style: none;
 }
+
+.tit{
+    text-align: center;
+    padding: 0 100px;
+    color: white;
+}
+.texto{
+    text-align: justify;
+    padding: 0 100px;
+    color: white;
+}
+
 /*Galería*/
 
 .cont{
