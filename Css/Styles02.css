@@ -20,6 +20,17 @@
     color: white;
 }
 
+.navbar {
+    overflow: hidden;
+    position: sticky; 
+    top: 0;
+    width: 100%; 
+  }
+
+.gif{
+    text-align: center;
+}
+
 /*Galería*/
 
 .cont{

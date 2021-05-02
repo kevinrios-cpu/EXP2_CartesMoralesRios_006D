@@ -18,6 +18,17 @@ body{
     color: black;
 }
 
+.navbar {
+    overflow: hidden;
+    position: sticky; 
+    top: 0;
+    width: 100%; 
+  }
+
+.registro{
+    text-align: center, justify;
+}
+
 /* Menú */
 nav{
     height: 80px;

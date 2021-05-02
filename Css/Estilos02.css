@@ -25,6 +25,13 @@ h1 {
     text-align: center;
 }
 
+.navbar {
+    overflow: hidden;
+    position: sticky; 
+    top: 0;
+    width: 100%; 
+  }
+
 /*Párrafos*/
 
 .tituloss{

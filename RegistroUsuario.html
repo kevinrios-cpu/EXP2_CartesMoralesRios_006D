@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>Registro</title>
+        <title>Registro de Usuario</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="img/favicon.png">
-        <link rel="stylesheet" href="Css/Estilos02.css">
+        <link rel="stylesheet" href="Css/Estiloiniciosesionyregistro.css">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -20,58 +20,62 @@
         </script>
     </head>
     <body>
+        <div class="navbar fixed-top">
         <nav>
             <label class="logo">Image/\Board</label>
             <ul>
                 <li><a class="active" href="MenuPrincipal02.html">Inicio</a></li>
                 <li><a href="QuienesSomos02.html">Sobre Nosotros</a></li>
                 <li><a href="Galeria02.html">Galería</a></li>
-                <li><a href="FormularioRegistro.html">Registro</a></li>
-                <li><a href="#">Formulario 2</a></li>
+                <li><a href="InicioSesion.html">Iniciar Sesión</a></li>
+                
             </ul>
             <label id="icon">
                 <i class="fas fa-bars"></i>
             </label>
         </nav>
+        </div>
         <br>
         <br>
         <form name="Contacto" method="POST" action="#">
             <h1 class="titulo-form">Registro Usuario</h1>
-            <label for="lname">Nombres usuario: </label>
-            <input type="text" id="nomUser" name="nombre" placeholder="Ingrese nombres" required autofocus><br><br>
+            <div class="registro">
+                <label for="lname">Nombres usuario: </label>
+                <input type="text" id="nomUser" name="nombre" placeholder="Ingrese nombres" required autofocus><br><br>
 
-            <label for="lapellido">Apellidos Usuario: </label>
-            <input type="text" id="apeUser" name="apellido" placeholder="Ingrese apellidos" required><br><br>
+                <label for="lapellido">Apellidos Usuario: </label>
+                <input type="text" id="apeUser" name="apellido" placeholder="Ingrese apellidos" required><br><br>
 
-            <label for="lmensaje">Seleccione género: </label><br><br>
-            <input type="radio" id="mascu" name="genero" value="masculino">
-            <label for="lmasculino">Masculino</label><br>
+                <label for="lmensaje">Seleccione género: </label><br><br>
+                <input type="radio" id="mascu" name="genero" value="masculino">
+                <label for="lmasculino">Masculino</label><br>
 
-            <input type="radio" id="fem" name="genero" value="femenino">
-            <label for="lfeme">Femenino</label><br>
+                <input type="radio" id="fem" name="genero" value="femenino">
+                <label for="lfeme">Femenino</label><br>
 
-            <input type="radio" id="desco" name="genero" value="desconocido">
-            <label for="ldesco">No deseo ingresar</label><br>
+                <input type="radio" id="desco" name="genero" value="desconocido">
+                <label for="ldesco">No deseo ingresar</label><br>
 
-            <input type="radio" id="otros" name="genero" value="otro">
-            <label for="lotro">Otro</label><br><br>
+                <input type="radio" id="otros" name="genero" value="otro">
+                <label for="lotro">Otro</label><br><br>
 
 
 
-            <label for="lmail">E-mail Usuario: </label>
-            <input type="text" id="mailUser" name="email" placeholder="Ingrese email" required><br><br>
+                <label for="lmail">E-mail Usuario: </label>
+                <input type="text" id="mailUser" name="email" placeholder="Ingrese email" required><br><br>
 
-            <label for="lmail">Ingrese Password: </label>
-            <input type="password" id="passUser" name="pass" placeholder="Ingrese password" required minlength="6" maxlength="8"><br><br>
+                <label for="lmail">Ingrese Password: </label>
+                <input type="password" id="passUser" name="pass" placeholder="Ingrese password" required minlength="6" maxlength="8"><br><br>
 
-            <label for="lconfirm">Confirmar Password: </label>
-            <input type="password" id="passConfUser" name="Confirmpass" placeholder="Confirmar password" required minlength="6" maxlength="8"><br><br>
+                <label for="lconfirm">Confirmar Password: </label>
+                <input type="password" id="passConfUser" name="Confirmpass" placeholder="Confirmar password" required minlength="6" maxlength="8"><br><br>
 
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpiar"><br>
-            <br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar"><br>
+                <br>
 
-        </form>
+            </form>
+            </div>
 
 
 
