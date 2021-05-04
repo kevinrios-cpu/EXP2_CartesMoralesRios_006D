@@ -16,6 +16,7 @@ body{
 
 .titulo-form{
     color: black;
+    text-align: center;
 }
 
 .navbar {
@@ -25,10 +26,24 @@ body{
     width: 100%; 
   }
 
-.registro{
-    text-align: center, justify;
-}
 
+
+
+.Registaruser{
+    text-align: center;
+    padding: 20 100px;
+    min-height: calc(100vh - 100px - 300px);
+    
+    }
+.registro{
+    text-align: justify;
+    background: #26507994;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+
+    
+}
 /* Menú */
 nav{
     height: 80px;
@@ -139,7 +154,7 @@ ul {
 }
 .footer {
     background-color: #076158;
-    padding: 20px 0;
+    padding: 37px 0;
 
 }
 
