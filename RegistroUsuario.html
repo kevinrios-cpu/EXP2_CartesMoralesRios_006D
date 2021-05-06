@@ -1,125 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <title>Registro de Usuario</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" href="img/favicon.png">
-        <link rel="stylesheet" href="Css/Estiloiniciosesionyregistro.css">
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-        <script>
-            $(document).ready(function(){
-                $('#icon').click(function(){
-                    $('ul').toggleClass('show');
-                });
-            });
 
-            
-        </script>
-        <style>
-            body {
-                background-image: url('img/gifmar.gif');
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                background-size: cover;
-                }
-        </style>
-    </head>
-    <body>
-        <div class="navbar fixed-top">
-        <nav>
-            <label class="logo">Image/\Board</label>
-            <ul>
-                <li><a class="active" href="MenuPrincipal02.html">Inicio</a></li>
-                <li><a href="QuienesSomos02.html">Sobre Nosotros</a></li>
-                <li><a href="Galeria02.html">Galería</a></li>
-                <li><a href="InicioSesion.html">Iniciar Sesión</a></li>
-                
-            </ul>
-            <label id="icon">
-                <i class="fas fa-bars"></i>
-            </label>
-        </nav>
-        </div>
-        <br>
-        <br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="Css/estilos.css">
+    <title>REGISTRO</title>
+</head>
 
-        <div class="Registaruser">
-            <form name="Contacto" method="POST" action="#">
-                <div class="registro">
-                    <h1 class="titulo-form">Registro Usuario</h1>
-                    <label for="lname">Nombres usuario: </label>
-                    <input type="text" id="nomUser" name="nombre" placeholder="Ingrese nombres" required autofocus><br><br>
-
-                    <label for="lapellido">Apellidos Usuario: </label>
-                    <input type="text" id="apeUser" name="apellido" placeholder="Ingrese apellidos" required><br><br>
-
-                    <label for="lmensaje">Seleccione género: </label><br><br>
-                    <input type="radio" id="mascu" name="genero" value="masculino">
-                    <label for="lmasculino">Masculino</label><br>
-
-                    <input type="radio" id="fem" name="genero" value="femenino">
-                    <label for="lfeme">Femenino</label><br>
-
-                    <input type="radio" id="desco" name="genero" value="desconocido">
-                    <label for="ldesco">No deseo ingresar</label><br>
-
-                    <input type="radio" id="otros" name="genero" value="otro">
-                    <label for="lotro">Otro</label><br><br>
-
-
-
-                    <label for="lmail">E-mail Usuario: </label>
-                    <input type="text" id="mailUser" name="email" placeholder="Ingrese email" required><br><br>
-
-                    <label for="lmail">Ingrese Password: </label>
-                    <input type="password" id="passUser" name="pass" placeholder="Ingrese password" required minlength="6" maxlength="8"><br><br>
-
-                    <label for="lconfirm">Confirmar Password: </label>
-                    <input type="password" id="passConfUser" name="Confirmpass" placeholder="Confirmar password" required minlength="6" maxlength="8"><br><br>
-
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpiar"><br>
-                    <br>
-                </div>
+<body>
+    <div class="container">
+        <div class="row justify-content-center pt-5 mt-5 m-1">
+            <div class="col-md-6 col-sm-8 col-xl-4 col-lg-5 formulario">
+                <form action="">
+                    <div class="form-group text-center pt-3">
+                        <h1 class="text-light">REGISTRO</h1>
+                    </div>
+                    <div class="form-group mx-sm-4 pt-3">
+                        <input type="text" class="form-control" required placeholder="Ingrese su Nombre">
+                        <span class="msj"></span>
+                    </div>
+                    <div class="form-group mx-sm-4 pb-3">
+                        <input type="email" class="form-control" required placeholder="Ingrese su Correo">
+                        <span class="msj"></span>
+                    </div>
+                    <div class="form-group mx-sm-4 pb-3">
+                        <input type="number" class="form-control" required placeholder="Ingrese su Edad">
+                        <span class="msj"></span>
+                    </div>
+                    <div class="form-group mx-sm-4 pb-3">
+                        <input type="password" class="form-control" required placeholder="Ingrese su Contraseña">
+                        <span class="msj"></span>
+                    </div>
+                    <div class="form-group mx-sm-4 pb-3">
+                        <input type="password" class="form-control" required placeholder="Reingrese su Contraseña">
+                        <span class="msj"></span>
+                    </div>
+                    <div class="form-group mx-sm-4 pb-2">
+                        <input type="submit" class="btn btn-block ingresar" value="REGISTRARSE">
+                    </div>
+                    <div class="form-group mx-sm-4 text-right">
+                        <p>En el momento de registrarte aceptas nuestras Condiciones de uso y politicas de privacidad.</p>
+                        <p>¿Ya Posees una cuenta?<a class="link" href="InicioSesion.html">Iniciar Sesion</a></p>
+                        <p>¿ Quieres volver al inicio ?<a class="link" href="MenuPrincipal02.html">Ir a inicio</a></p>
+                    </div>
                 </form>
-               
             </div>
+        </div>
+    </div>
 
 
-        <footer class="footer">
 
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col">
-                        <h4>Integrantes: </h4>
-                        <br>
-                        <ul>
-                            <li><a href="#">Alejandra Cartes</a></li>
-                            <li><a href="#">Kevin Rios</a></li>
-                            <li><a href="#">Christian Morales</a></li>
-                        <ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Síguenos en nuestras redes sociales: </h4>
-                        <br>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
 
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <br>
-            <h2 class="titular-final">&copy;ImageBoard Design | ImageBoard 2021 </h2>
-        </footer>
 </body>
-
 
 </html>
